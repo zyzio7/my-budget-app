@@ -1,0 +1,10 @@
+<mat-list>
+  <h3 mat-subheader>Available products</h3>
+  <mat-list-item *ngFor="let bill of bills">
+    <!--{{ bill.date }}-->
+    <mat-list-item *ngFor="let entry of bill.entries">
+      {{ entry.name }} {{ entry.value }}
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
