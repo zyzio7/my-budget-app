@@ -8,9 +8,10 @@ import {Bill} from './bill';
 })
 export class AppComponent implements OnInit {
   title = 'my-budget';
-  bills: Bill[];
+  bills: Bill[] = [];
 
   ngOnInit(): void {
+    this.bills = this.generateSampleBills();
     this.bills = [
       {
         'date': new Date(), 'entries': [{
@@ -34,6 +35,25 @@ export class AppComponent implements OnInit {
       }
     ];
   }
+
+  generateSampleBills(): Bill[] {
+    const numberOfDays = 10;
+    const maxBillsPerDay = 3;
+
+    let bills:Bill[] = [];
+    for(let i = 0; i < numberOfDays; i++) {
+      let bill = {
+        date: new Date(),
+
+      }
+    }
+
+    return bills;
+  }
+
+  // getRandomCategory(): Category {
+  //   Category
+  // }
 
 
 }

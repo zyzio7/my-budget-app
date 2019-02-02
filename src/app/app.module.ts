@@ -7,6 +7,7 @@ import { BillsListComponent } from './bills-list/bills-list.component';
 import { MatListModule, MatDividerModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { IncomeOutcomeSummaryComponent } from './income-outcome-summary/income-outcome-summary.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppComponent,
     DashboardComponent,
     BillsListComponent,
+    IncomeOutcomeSummaryComponent,
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
