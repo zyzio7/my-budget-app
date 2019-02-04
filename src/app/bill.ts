@@ -1,3 +1,5 @@
+import {Category} from "./category.enum";
+
 export interface Bill {
   date: Date;
   entries: BillEntry[];
@@ -6,10 +8,7 @@ export interface Bill {
 export interface BillEntry {
   name: string;
   value: number;
+  category: Category
   rawLine?: string;
 }
 
-const val = {
-  name: 'a',
-  value: 10
-}
